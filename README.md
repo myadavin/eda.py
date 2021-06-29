@@ -1,5 +1,7 @@
 # Exploratory data analysis using Python
 
+## About the module!
+
 Python module for Exploratory Data Analysis, which can be used for any data set
 
 This module has following sub functions for the data analysis
@@ -11,4 +13,21 @@ This module has following sub functions for the data analysis
  5. KNN analysis
 
 At any point in time, you can exit a particular loop or sub function by typing exit
+
+==================================================================
+
+## How to use it!
+
+1) Please install Anaconda https://docs.anaconda.com/anaconda/navigator/
+2) Please install Spider IDE https://docs.spyder-ide.org/current/index.html
+3) Download the eda.py from this project repo and few sample data sets
+4) Run the eda.py in Spider IDE, when prompted, provide the data file
+5) Graphs will be populated in Plots area in Spider
+
+==================================================================
+
+## Future enhancements
+
+Make it Menu Driven program instead of sequential execution
+Web enabled page 
 
