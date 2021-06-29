@@ -12,8 +12,6 @@ This module has following sub functions for the data analysis
  4. Logistic Regression on the data set
  5. KNN analysis
 
-==================================================================
-
 ## How to use it!
 
 1) Please install Anaconda https://docs.anaconda.com/anaconda/navigator/
@@ -23,12 +21,9 @@ This module has following sub functions for the data analysis
 5) Graphs will be populated in Plots area in Spider
 6) At any point in time, you can exit a particular loop or sub function by typing 'exit'
 
-==================================================================
-
 ## Future enhancements
 
 Make it Menu Driven program instead of sequential execution
  OR  
 Web enabled page 
 
-==================================================================
