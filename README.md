@@ -10,5 +10,5 @@ This module has following sub functions for the data analysis
  4. Logistic Regression on the data set
  5. KNN analysis
 
-At any point in time, you can exit a perticular loot or sub function by typing exit
+At any point in time, you can exit a perticular loop or sub function by typing exit
 
