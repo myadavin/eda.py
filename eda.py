@@ -3,13 +3,21 @@
 """
 Created on Fri Feb 21 17:50:49 2020
 
-@author: myadav
+@author: Mukund Yadav
 """
 
 #===========================================================
-#Objective : Explore any data and  Classification 
+# Objective : Exploratory data analysis & Classification
+# This is generic framework to analyze any data set 
 #===========================================================
-#import required libraries
+# Version | Name           | Change details   | Date
+#-----------------------------------------------------------
+# 1.0     | Mukund Yadav   | Baseline version | 18-Mar-2020
+#         |                |                  |
+#         |                |                  |
+#         |                |                  |
+#===========================================================
+# Import required libraries
 #===========================================================
 
 import os 
@@ -39,7 +47,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #===========================================================
-#Import Data
+# Import Data to be analyzed
 #===========================================================
 
 file1 = input("Please enter the file name with extension :")
@@ -53,16 +61,14 @@ data = data_income.copy(deep=True)
 # Data Exploration 
 # 1. Getting to know data
 # 2. Data pre processing / missing data
-# 3. cross table and data validation and visualiazation
+# 3. Cross table and data validation and visualiazation
+# 4. Logistic Regression on the data set
+# 5. KNN analysis
 #===========================================================
 """
 #===========================================================
 # 1. Gettingto know data
 #===========================================================
-# for i in ( 1,2,3):
-#     br = input('Exit :')
-#     if br == 'exit':
-#         break
 
 # Check variable data type 
 print(data.info())
@@ -72,9 +78,7 @@ input("Press Enter to continue...")
 print('Data columns with null values\n', data.isnull().sum())
 input("Press Enter to continue...")
  
-
 # Summary of numerical variables
-
 summary_num = data.describe()
 print('\n Summary of numerical variables\n',summary_num)
 input("Press Enter to continue...")
@@ -89,20 +93,14 @@ for col in data.columns:
     print(col) 
     print(' \n', col ,' \n', data[col].value_counts())
     print('\n ', col ,'  \n', np.unique(data[col]))
-#    plt.hist(data[col])
-#    plt.show()
-#    time.sleep(2)
     sns.countplot(y=col, data=data)
-#    time.sleep(2)
     plt.show()
     br = input("Press Enter to continue or 'exit' to exit... :")
     if br == 'exit':
         break
 
-
 # See for any null value, and reimport as null
 data = pd.read_csv(file1, na_values=[" ?"])
-
 
 #===========================================================
 # 2. Data pre processing / missing data
@@ -156,10 +154,10 @@ for col in data2.columns:
         break
   
 #===========================================================
-# Logistic Regression
+# 4. Logistic Regression on the data set
 #===========================================================
 
-# Reindexing salary status to 0 / 1 
+# Reindexing status to 0 / 1 
 
 data3=data2.copy(deep=True)
 data3[hue1] = data3[hue1].map({hue1_one:0,hue1_two:1})
@@ -174,7 +172,6 @@ print(column_list)
 # Saperating input names from the list 
 features = list(set(column_list)-set([hue1]))
 print(features)
-
 
 # Store the out put values in Y
 y=new_data[hue1].values
@@ -208,7 +205,7 @@ print('Accuracy Scire Logistic : ' , accuracy_score)
 print('Misclassified sample : %d ' % (test_y !=prediction).sum())
 
 #===========================================================
-# KNN
+# 5. KNN analysis
 #===========================================================
 
 #reload(np)
@@ -241,3 +238,5 @@ for i in range(1,knn_num):
     print('Accuracy Scire KNN : ' , accuracy_scoreKNN)
     
 print(misclassified_sample)
+
+# End of EDA module
