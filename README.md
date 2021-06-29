@@ -12,8 +12,6 @@ This module has following sub functions for the data analysis
  4. Logistic Regression on the data set
  5. KNN analysis
 
-At any point in time, you can exit a particular loop or sub function by typing exit
-
 ==================================================================
 
 ## How to use it!
@@ -23,6 +21,7 @@ At any point in time, you can exit a particular loop or sub function by typing e
 3) Download the eda.py from this project repo and few sample data sets
 4) Run the eda.py in Spider IDE, when prompted, provide the data file
 5) Graphs will be populated in Plots area in Spider
+6) At any point in time, you can exit a particular loop or sub function by typing 'exit'
 
 ==================================================================
 
@@ -32,3 +31,4 @@ Make it Menu Driven program instead of sequential execution
  OR  
 Web enabled page 
 
+==================================================================
