@@ -61,7 +61,7 @@ data = data_income.copy(deep=True)
 # Data Exploration 
 # 1. Getting to know data
 # 2. Data pre processing / missing data
-# 3. Cross table and data validation and visualiazation
+# 3. Crosstable and data validation and visualization
 # 4. Logistic Regression on the data set
 # 5. KNN analysis
 #===========================================================
@@ -122,7 +122,7 @@ print(' Check Corelation data in Variable Explorer')
 input("Press Enter to continue...")
 
 #===========================================================
-# 3. cross table and data validation
+# 3. crosstable and data validation and visualization
 #===========================================================
 
 # Bar diagram with counts for a HUE

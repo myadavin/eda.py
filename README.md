@@ -8,7 +8,7 @@ This module has following sub functions for the data analysis
 
  1. Getting to know data
  2. Data pre processing / missing data
- 3. Cross table and data validation and visualiazation
+ 3. Crosstable and data validation and visualization
  4. Logistic Regression on the data set
  5. KNN analysis
 
