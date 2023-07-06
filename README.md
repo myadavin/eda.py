@@ -21,6 +21,9 @@ This module has the following sub-functions for the data analysis
 5) Graphs will be populated in the Plots area in Spider
 6) At any point in time, you can exit a particular loop or sub-function by typing 'exit'
 
+## Blog
+Blog about this project https://yadavmukund.blogspot.com/2021/06/exploratory-data-analysis-using-python.html
+
 ## Future enhancements
 
 Make it Menu Driven program instead of sequential execution
